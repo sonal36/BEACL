@@ -1,0 +1,47 @@
+{
+    "name": "p2media/be-acl",
+    "description": "Backend Access Control Lists",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Sebastian Kurfuerst",
+            "email": "sebastian@garbage-group.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Jan Bartels",
+            "email": "j.bartels@arcor.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Moritz Ngo",
+            "email": "moritz.ngo@p2media.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/p2media/typo3-ext--be-acl",
+        "issues": "https://github.com/p2media/typo3-ext--be-acl/issues",
+        "forum": "https://github.com/p2media/typo3-ext--be-acl/discussions",
+        "docs": "https://docs.typo3.org/typo3cms/extensions/be_acl/"
+    },
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JBartels\\BeAcl\\": "Classes/",
+            "P2Media\\BeAcl\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "be_acl"
+        }
+    },
+    "replace": {
+        "jbartels/be-acl": "self.version",
+        "typo3-ter/be-acl": "self.version"
+    }
+}
